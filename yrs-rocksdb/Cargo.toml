@@ -1,6 +1,6 @@
 [package]
 name = "yrs-rocksdb"
-version = "0.3.0"
+version = "0.3.1"
 description = "Persistence layer over Yrs documents for RocksDB backend"
 license = "MIT"
 authors = ["Bartosz Sypytkowski <b.sypytkowski@gmail.com>"]
@@ -17,7 +17,7 @@ yrs-kvstore = { version = "0.3", path = "../yrs-kvstore" }
 rocksdb = { version = "0.22" }
 
 [dev-dependencies]
-yrs = "0.19"
+yrs = "0.21"
 criterion = "0.5"
 tempdir = "0.3"
 

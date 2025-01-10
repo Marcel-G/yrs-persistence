@@ -1,6 +1,6 @@
 [package]
 name = "yrs-lmdb"
-version = "0.3.0"
+version = "0.3.1"
 description = "Persistence layer over Yrs documents for LMDB backend"
 license = "MIT"
 authors = ["Bartosz Sypytkowski <b.sypytkowski@gmail.com>"]
@@ -14,10 +14,10 @@ readme = "./README.md"
 
 [dependencies]
 yrs-kvstore = { version = "0.3", path = "../yrs-kvstore" }
-lmdb-rs = { version = "0.7" }
+lmdb-rs = { version = "0.8" }
 
 [dev-dependencies]
-yrs = "0.19"
+yrs = "0.21"
 criterion = "0.5"
 tempdir = "0.3"
 
@@ -29,3 +29,6 @@ harness = false
 doctest = false
 bench = true
 doc = true
+
+[patch.crates-io]
+lmdb-rs = { git = "https://github.com/tari-project/lmdb-rs" }
